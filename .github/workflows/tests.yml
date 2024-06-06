@@ -1,4 +1,4 @@
-name: 'GADS Tests'
+name: 'JS Tests'
 on: 
   push:
     branches:
