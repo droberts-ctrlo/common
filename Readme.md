@@ -1,4 +1,4 @@
-# Common Module [![GADS Tests](https://github.com/droberts-ctrlo/common/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/droberts-ctrlo/common/actions/workflows/tests.yml)
+# Common Module [![Unit Tests](https://github.com/droberts-ctrlo/common/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/droberts-ctrlo/common/actions/workflows/tests.yml)
 
 This is a common module with functionality for use within other modules - some code here is repeated or replacements for
 JQuery functionality with some additional functionality. The functionality within this library is as follows:
