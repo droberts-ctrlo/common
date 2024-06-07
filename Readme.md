@@ -1,4 +1,6 @@
-# Common Module [![JS Tests](https://github.com/droberts-ctrlo/common/actions/workflows/tests.yml/badge.svg)](https://github.com/droberts-ctrlo/common/actions/workflows/tests.yml)
+# Common Module
+
+[![JS Tests](https://github.com/droberts-ctrlo/common/actions/workflows/tests.yml/badge.svg)](https://github.com/droberts-ctrlo/common/actions/workflows/tests.yml)
 
 This is a common module with functionality for use within other modules - some code here is repeated or replacements for
 JQuery functionality with some additional functionality. The functionality within this library is as follows:
@@ -34,3 +36,8 @@ to false - this is a more specific and ARIA-compatible version of JQuery's `show
 
 `fromJSON<T>(data:JSONData<T>):T` - This function converts a JSON string to an object, or returns the object if it is
 not a string.
+
+
+## Testing
+
+Jest testing has been removed due to an issue with JEST and ESM, although unit tests do exist
