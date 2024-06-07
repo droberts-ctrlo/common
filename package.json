@@ -18,6 +18,7 @@
     "vitest": "^1.6.0"
   },
   "scripts": {
+    "test": "vitest",
     "lint": "eslint src",
     "prepublish": "tsc"
   },
