@@ -1,9 +1,16 @@
 {
   "type": "module",
   "name": "@davetheitguy/common",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "license": "MIT",
   "private": false,
+  "author": {
+    "name": "Dave Roberts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/droberts-ctrlo/common.git"
+  },
   "devDependencies": {
     "@babel/preset-env": "^7.24.7",
     "@babel/preset-typescript": "^7.24.7",
@@ -23,10 +30,9 @@
     "prepublish": "tsc"
   },
   "dependencies": {
-    "@davetheitguy/common": "^1.0.6",
-    "@davetheitguy/markdown-formatter": "^1.0.6",
     "jquery": "^3.7.1"
   },
   "module": "./dist/common.js",
-  "types": "./dist/common.d.ts"
+  "types": "./dist/common.d.ts",
+  "main": "./dist/common.js"
 }

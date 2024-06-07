@@ -956,21 +956,6 @@
     "@babel/helper-validator-identifier" "^7.24.7"
     to-fast-properties "^2.0.0"
 
-"@davetheitguy/common@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@davetheitguy/common/-/common-1.0.6.tgz#16d37c2c88d8334d70ccb80d0c9411d0727823d8"
-  integrity sha512-X5bW+kKTtZ1nsSL2c9GE1PUbcIRCmavzPaXx9JUWmT7n7zlMkKDpHZXh46jirQN1BAuWaB6crX1L957yo+57xQ==
-  dependencies:
-    jquery "^3.7.1"
-
-"@davetheitguy/markdown-formatter@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@davetheitguy/markdown-formatter/-/markdown-formatter-1.0.6.tgz#a017e0c3714bdbf71ea3831606fe05a66ea52d89"
-  integrity sha512-TWki95j7E0HlMJrXUceJBfn3d/+lhB5RqK1wSMj47be5mUkcq44+W+wziyVJ+zAARJAg74nKhcKuihNBoEwMyg==
-  dependencies:
-    eslint "9.x"
-    marked "^12.0.2"
-
 "@esbuild/aix-ppc64@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/aix-ppc64/-/aix-ppc64-0.20.2.tgz#a70f4ac11c6a1dfc18b8bbb13284155d933b9537"
@@ -1987,7 +1972,7 @@ eslint-visitor-keys@^4.0.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-4.0.0.tgz#e3adc021aa038a2a8e0b2f8b0ce8f66b9483b1fb"
   integrity sha512-OtIRv/2GyiF6o/d8K7MYKKbXrOUBIK6SfkIRM4Z0dY3w+LiQ0vy3F57m0Z71bjbyeiWFiHJ8brqnmE6H6/jEuw==
 
-eslint@9.x, eslint@^9.4.0:
+eslint@^9.4.0:
   version "9.4.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-9.4.0.tgz#79150c3610ae606eb131f1d648d5f43b3d45f3cd"
   integrity sha512-sjc7Y8cUD1IlwYcTS9qPSvGjAC8Ne9LctpxKKu3x/1IC9bnOg98Zy6GxEJUfr1NojMgVPlyANXYns8oE2c1TAA==
@@ -2589,11 +2574,6 @@ magic-string@^0.30.5:
   integrity sha512-iIRwTIf0QKV3UAnYK4PU8uiEc4SRh5jX0mwpIwETPpHdhVM4f53RSwS/vXvN1JhGX+Cs7B8qIq3d6AH49O5fAQ==
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.4.15"
-
-marked@^12.0.2:
-  version "12.0.2"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-12.0.2.tgz#b31578fe608b599944c69807b00f18edab84647e"
-  integrity sha512-qXUm7e/YKFoqFPYPa3Ukg9xlI5cyAtGmyEIzMfW//m6kXwCy2Ps9DYf5ioijFKQ8qyuscrHoY04iJGctu2Kg0Q==
 
 merge-stream@^2.0.0:
   version "2.0.0"
