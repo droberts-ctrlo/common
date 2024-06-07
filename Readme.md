@@ -36,8 +36,3 @@ to false - this is a more specific and ARIA-compatible version of JQuery's `show
 
 `fromJSON<T>(data:JSONData<T>):T` - This function converts a JSON string to an object, or returns the object if it is
 not a string.
-
-
-## Testing
-
-Jest testing has been removed due to an issue with JEST and ESM, although unit tests do exist

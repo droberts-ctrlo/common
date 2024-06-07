@@ -1,12 +1,12 @@
-import { describe, it, jest, expect } from "@jest/globals"
+import { describe, it, vi, expect } from "vitest"
 import { addClass, fromJson, hideElement, removeClass, showElement, stopPropagation } from "./common";
 
 describe('common functions', () => {
     describe('event handling', () => {
         it('stops propagation', () => {
             const ev = {
-                stopPropagation: jest.fn(),
-                preventDefault: jest.fn(),
+                stopPropagation: vi.fn(),
+                preventDefault: vi.fn(),
             };
             stopPropagation(<any>ev);
             expect(ev.stopPropagation).toHaveBeenCalled();
@@ -17,10 +17,10 @@ describe('common functions', () => {
     describe('CSS and ARIA', () => {
         it('hides an element', () => {
             const el = {
-                hasClass: jest.fn().mockReturnValue(false),
-                addClass: jest.fn(),
-                attr: jest.fn(),
-                css: jest.fn()
+                hasClass: vi.fn().mockReturnValue(false),
+                addClass: vi.fn(),
+                attr: vi.fn(),
+                css: vi.fn()
             };
             hideElement(<any>el);
             expect(el.hasClass).toHaveBeenCalledWith('hidden');
@@ -30,9 +30,9 @@ describe('common functions', () => {
 
         it('does not hide a hidden element', () => {
             const el = {
-                hasClass: jest.fn().mockReturnValue(true),
-                addClass: jest.fn(),
-                attr: jest.fn()
+                hasClass: vi.fn().mockReturnValue(true),
+                addClass: vi.fn(),
+                attr: vi.fn()
             };
             hideElement(<any>el);
             expect(el.hasClass).toHaveBeenCalledWith('hidden');
@@ -42,10 +42,10 @@ describe('common functions', () => {
 
         it('shows a hidden element', () => {
             const el = {
-                hasClass: jest.fn().mockReturnValue(true),
-                removeClass: jest.fn(),
-                removeAttr: jest.fn(),
-                css: jest.fn()
+                hasClass: vi.fn().mockReturnValue(true),
+                removeClass: vi.fn(),
+                removeAttr: vi.fn(),
+                css: vi.fn()
             };
             showElement(<any>el);
             expect(el.hasClass).toHaveBeenCalledWith('hidden');
@@ -55,9 +55,9 @@ describe('common functions', () => {
 
         it('does not show a visible element', () => {
             const el = {
-                hasClass: jest.fn().mockReturnValue(false),
-                removeClass: jest.fn(),
-                removeAttr: jest.fn()
+                hasClass: vi.fn().mockReturnValue(false),
+                removeClass: vi.fn(),
+                removeAttr: vi.fn()
             };
             showElement(<any>el);
             expect(el.hasClass).toHaveBeenCalledWith('hidden');
@@ -67,8 +67,8 @@ describe('common functions', () => {
 
         it('adds a class', () => {
             const el = {
-                hasClass: jest.fn().mockReturnValue(false),
-                addClass: jest.fn()
+                hasClass: vi.fn().mockReturnValue(false),
+                addClass: vi.fn()
             };
             addClass(<any>el, 'foo');
             expect(el.hasClass).toHaveBeenCalledWith('foo');
@@ -77,8 +77,8 @@ describe('common functions', () => {
 
         it('does not add a class if it already exists', () => {
             const el = {
-                hasClass: jest.fn().mockReturnValue(true),
-                addClass: jest.fn()
+                hasClass: vi.fn().mockReturnValue(true),
+                addClass: vi.fn()
             };
             addClass(<any>el, 'foo');
             expect(el.hasClass).toHaveBeenCalledWith('foo');
@@ -87,8 +87,8 @@ describe('common functions', () => {
 
         it('removes a class', () => {
             const el = {
-                hasClass: jest.fn().mockReturnValue(true),
-                removeClass: jest.fn()
+                hasClass: vi.fn().mockReturnValue(true),
+                removeClass: vi.fn()
             };
             removeClass(<any>el, 'foo');
             expect(el.hasClass).toHaveBeenCalledWith('foo');
@@ -97,8 +97,8 @@ describe('common functions', () => {
 
         it('does not remove a class if it does not exist', () => {
             const el = {
-                hasClass: jest.fn().mockReturnValue(false),
-                removeClass: jest.fn()
+                hasClass: vi.fn().mockReturnValue(false),
+                removeClass: vi.fn()
             };
             removeClass(<any>el, 'foo');
             expect(el.hasClass).toHaveBeenCalledWith('foo');
